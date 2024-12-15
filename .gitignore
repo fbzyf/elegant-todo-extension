@@ -7,13 +7,3 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
-
-# 依赖目录
-node_modules/
-
-# 构建输出
-dist/
-build/
-
-# 日志文件
-*.log 
