@@ -24,7 +24,7 @@
 
 1. 下载此仓库代码
    ```bash
-   git clone https://github.com/你的用户名/elegant-todo-extension.git
+   git clone https://github.com/fbzyf/elegant-todo-extension.git
    ```
 2. 打开Chrome浏览器，进入扩展管理页面：`chrome://extensions/`
 3. 开启右上角的"开发者模式"
