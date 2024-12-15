@@ -1,0 +1,15 @@
+{
+  "name": "elegant-todo-extension",
+  "version": "1.0.0",
+  "description": "一个简洁优雅的Chrome待办事项扩展",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "web-ext build",
+    "start": "web-ext run"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "web-ext": "^7.0.0"
+  },
+  "private": true
+} 

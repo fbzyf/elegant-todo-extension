@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: 设置 Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        
+    - name: 安装依赖
+      run: |
+        npm install -g eslint
+        npm install -g web-ext
+        
+    - name: 运行代码检查
+      run: eslint .
+      
+    - name: 构建扩展
+      run: web-ext build
+      
+    - name: 上传构建产物
+      uses: actions/upload-artifact@v2
+      with:
+        name: extension-build
+        path: web-ext-artifacts/ 
